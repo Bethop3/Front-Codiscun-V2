@@ -1,0 +1,111 @@
+.header {
+    background-color: #00b8d4; /* Fondo azul */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Define 12 columnas iguales */
+    gap: 24px; /* Espacio entre columnas */
+    padding: 0 64px; /* Márgenes a los lados */
+    align-items: center; /* Centrado vertical */
+    height: 104px; /* Altura del header */
+    width: 100%; /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Logo */
+  .logo-container {
+    grid-column: span 1; /* Ocupa 1 columna */
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center; /* Centra el logo verticalmente */
+  }
+  
+  .logo {
+    height: 100px; /* Tamaño del logo */
+    width: auto;
+    
+    transition: box-shadow 0.3s ease; /* Transición suave al cambiar la sombra */
+  }
+  
+  .logo:hover {
+    
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+  }
+  
+  
+  /* Navegación */
+  .navigation {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columnas para los enlaces */
+    gap: 24px; /* Espacio entre enlaces */
+    grid-column: span 10; /* Navegación ocupa 10 columnas */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  /* Estilo para cada enlace según su tamaño */
+  .nav-link:nth-child(1) { grid-column: span 1; } /* Inicio */
+  .nav-link:nth-child(2) { grid-column: span 2; } /* ¿Quiénes somos? */
+  .nav-link:nth-child(3) { grid-column: span 2; } /* Educación y Prevención */
+  .nav-link:nth-child(4) { grid-column: span 2; } /* Programas Clínicos */
+  .nav-link:nth-child(5) { grid-column: span 1; } /* CIJ */
+  .nav-link:nth-child(6) { grid-column: span 1; } /* LGBTQ+ */
+  .nav-link:nth-child(7) { grid-column: span 1; } /* Contacto */
+  
+  /* Enlaces generales */
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center; /* Centra el texto dentro de su columna */
+    white-space: nowrap; /* Evita que el texto se quiebre */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: black; /* Cambia a negro al pasar el ratón */
+  text-decoration: none; /* Asegura que no aparezca subrayado */
+  }
+  
+/* Botón "Donar" */
+.donate-button {
+    grid-column: span 1; /* Ocupa 1 columna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .donate-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Texto inicial blanco */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    background-color: #00b8d4; /* Fondo azul */
+    border-radius: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .donate-link:hover {
+    transform: scale(1.05); /* Agranda el botón ligeramente */
+    color: red; /* Cambia el texto a rojo */
+  }
+  
+  /* Estilos para el icono */
+  .donate-icon {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+    background-image: url('../Componentes/Layout/Donarblanco.png'); /* Imagen inicial */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease;
+  }
+  
+  .donate-link:hover .donate-icon {
+    background-image: url('../Componentes/Layout/DonarRojo.png'); /* Imagen roja al hover */
+  }
+  
+  
