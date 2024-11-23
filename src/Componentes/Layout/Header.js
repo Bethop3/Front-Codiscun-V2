@@ -25,7 +25,7 @@ function Header() {
 
       {/* Botón Donar */}
       <div className="donate-button">
-  <Link to="/donaciones/vistadonaciones" className="donate-link">
+  <Link to="/donaciones/donaciones" className="donate-link">
     <div className="donate-icon"></div> {/* Icono como fondo */}
     Donar
   </Link>
