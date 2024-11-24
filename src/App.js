@@ -1,12 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './Componentes/Layout/Header.js';
+import Navbar from './Componentes/Layout/Header.js'; // Ajusta la ruta si es necesario
+import Footer from './Componentes/Layout/Footer.js'; // Ajusta la ruta si es necesario
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* Navbar */}
+      <Navbar className="navbar" />
+
+      {/* Contenido principal */}
+      <div className="main-content">
+        hola
+      </div>
+
+      {/* Footer */}
+      <Footer className="footer" />
     </div>
   );
 }
