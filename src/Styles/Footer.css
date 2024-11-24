@@ -1,0 +1,123 @@
+/* Footer Principal */
+.footer {
+    background-color: #00b8d4; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 64px 64px; /* Padding interno */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    box-sizing: border-box;
+  }
+  
+  /* Contenedor del Footer */
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas */
+    gap: 24px; /* Espacio entre columnas */
+    max-width: 100%; /* Máximo ancho */
+    margin: 0 auto; /* Centrado horizontal */
+    align-items: start; /* Alineación vertical al inicio */
+  }
+  
+  .footer-logo {
+    grid-column: span 2; /* Asegura que ocupe 2 columnas en tu sistema de grid */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Ajusta al 100% de la altura disponible */
+    position: relative; /* Base para elementos hijos posicionados */
+  }
+  
+  .footer-logo-img {
+    max-width: 50%; /* Controla el tamaño máximo de la imagen dentro del contenedor */
+    height: auto; /* Mantiene las proporciones */
+  }
+  
+  
+  
+  /* Sección Contáctanos */
+  .footer-contact {
+    grid-column: span 2; /* Ocupa 2 columnas */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .footer-contact p,
+  .footer-contact a {
+    font-size: 14px;
+    margin: 4px 0; /* Espaciado reducido */
+  }
+  
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-contact a:hover {
+    color: #ffe57f;
+  }
+  
+  /* Sección Iconos de Redes Sociales */
+  .footer-social {
+    grid-column: span 6; /* Ocupa 6 columnas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around; /* Espaciado uniforme */
+    gap: 16px; /* Espacio entre los iconos */
+  }
+  
+  .social-icons span {
+    background-color: white; /* Fondo blanco */
+    color: #00b8d4;
+    padding: 16px;
+    border-radius: 50%; /* Forma circular */
+    font-size: 14px;
+  }
+  
+  /* Sección Acerca de */
+  .footer-about {
+    grid-column: span 2; /* Ocupa 2 columnas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-about h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  
+  .footer-about p,
+  .footer-about a {
+    font-size: 14px;
+    margin: 4px 0; /* Espaciado reducido */
+  }
+  
+  .footer-about a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-about a:hover {
+    color: #ffe57f;
+  }
+  
